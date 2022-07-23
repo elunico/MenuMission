@@ -1,51 +1,61 @@
 {
   "images" : [
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission~mac.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-16@2x~mac.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "16x16"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-32~mac.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-32@2x~mac.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "32x32"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-128~mac.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-128@2x~mac.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-256~mac.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-256@2x~mac.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-512~mac.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
+      "filename" : "_Users_thomaspovinelli_Downloads_menumission-512@2x~mac.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
