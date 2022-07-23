@@ -48,9 +48,3 @@ func open(appName: String) -> Bool {
     let arguments = ["-a", appName]
     return open(appName: appName, arguments: arguments)
 }
-
-@discardableResult
-func openNew(appName: String) -> Bool {
-    let arguments = ["-n", "-a", appName]
-    return open(appName: appName, arguments: arguments)
-}

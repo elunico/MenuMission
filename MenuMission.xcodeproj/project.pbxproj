@@ -11,6 +11,7 @@
 		DC2449B7288B45FA0035A236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2449B6288B45FA0035A236 /* AppDelegate.swift */; };
 		DC2449BB288B45FB0035A236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2449BA288B45FB0035A236 /* Assets.xcassets */; };
 		DC2449BE288B45FB0035A236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2449BC288B45FB0035A236 /* Main.storyboard */; };
+		DC51136F288C699000D6B85A /* MenuMissionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51136E288C699000D6B85A /* MenuMissionItem.swift */; };
 		DC6B952C288B8A860057E867 /* ButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B952B288B8A850057E867 /* ButtonAction.swift */; };
 		DC6B952E288B8FBE0057E867 /* LaunchUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B952D288B8FBE0057E867 /* LaunchUtils.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,7 @@
 		DC2449BD288B45FB0035A236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC2449BF288B45FB0035A236 /* MenuMission.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuMission.entitlements; sourceTree = "<group>"; };
 		DC2449C5288B47750035A236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DC51136E288C699000D6B85A /* MenuMissionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMissionItem.swift; sourceTree = "<group>"; };
 		DC6B952B288B8A850057E867 /* ButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAction.swift; sourceTree = "<group>"; };
 		DC6B952D288B8FBE0057E867 /* LaunchUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 			children = (
 				DC2449C5288B47750035A236 /* Info.plist */,
 				DC2449B6288B45FA0035A236 /* AppDelegate.swift */,
+				DC51136E288C699000D6B85A /* MenuMissionItem.swift */,
 				DC6B952D288B8FBE0057E867 /* LaunchUtils.swift */,
 				DC2449BA288B45FB0035A236 /* Assets.xcassets */,
 				DC169498288B7EF8000A80CA /* PopoverViewController.swift */,
@@ -142,6 +145,7 @@
 				DC6B952E288B8FBE0057E867 /* LaunchUtils.swift in Sources */,
 				DC169499288B7EF8000A80CA /* PopoverViewController.swift in Sources */,
 				DC6B952C288B8A860057E867 /* ButtonAction.swift in Sources */,
+				DC51136F288C699000D6B85A /* MenuMissionItem.swift in Sources */,
 				DC2449B7288B45FA0035A236 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +285,7 @@
 				CODE_SIGN_ENTITLEMENTS = MenuMission/MenuMission.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 072322A;
 				DEVELOPMENT_TEAM = 9KTV75G5K9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -293,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tom.MenuMission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -309,7 +313,7 @@
 				CODE_SIGN_ENTITLEMENTS = MenuMission/MenuMission.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 072322A;
 				DEVELOPMENT_TEAM = 9KTV75G5K9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,7 +325,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tom.MenuMission;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

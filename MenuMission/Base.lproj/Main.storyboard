@@ -743,11 +743,23 @@
                                     <action selector="pressedButtonWithSender:" target="vLf-xu-IDg" id="UCW-J5-6Lt"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5M-TE-94d">
+                                <rect key="frame" x="154" y="45" width="142" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Remove This Item" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fRc-Bo-T9Q">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="removePressed:" target="vLf-xu-IDg" id="u9a-EZ-0DF"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="launchPadRadio" destination="ied-7K-Csx" id="Ra9-vu-pne"/>
                         <outlet property="missionControlRadio" destination="GxV-9C-ZhO" id="zx2-bo-ZXa"/>
+                        <outlet property="removeButton" destination="r5M-TE-94d" id="0Lf-Wv-7QB"/>
                     </connections>
                 </viewController>
                 <customObject id="S6l-pj-kxs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
