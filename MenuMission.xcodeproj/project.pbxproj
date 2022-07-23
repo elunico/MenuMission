@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC169499288B7EF8000A80CA /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC169498288B7EF8000A80CA /* PopoverViewController.swift */; };
 		DC2449B7288B45FA0035A236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2449B6288B45FA0035A236 /* AppDelegate.swift */; };
-		DC2449B9288B45FA0035A236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2449B8288B45FA0035A236 /* ViewController.swift */; };
 		DC2449BB288B45FB0035A236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2449BA288B45FB0035A236 /* Assets.xcassets */; };
 		DC2449BE288B45FB0035A236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2449BC288B45FB0035A236 /* Main.storyboard */; };
+		DC6B952C288B8A860057E867 /* ButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B952B288B8A850057E867 /* ButtonAction.swift */; };
+		DC6B952E288B8FBE0057E867 /* LaunchUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6B952D288B8FBE0057E867 /* LaunchUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC169498288B7EF8000A80CA /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		DC2449B3288B45FA0035A236 /* MenuMission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuMission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2449B6288B45FA0035A236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC2449B8288B45FA0035A236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC2449BA288B45FB0035A236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2449BD288B45FB0035A236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC2449BF288B45FB0035A236 /* MenuMission.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuMission.entitlements; sourceTree = "<group>"; };
+		DC2449C5288B47750035A236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DC6B952B288B8A850057E867 /* ButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAction.swift; sourceTree = "<group>"; };
+		DC6B952D288B8FBE0057E867 /* LaunchUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +57,12 @@
 		DC2449B5288B45FA0035A236 /* MenuMission */ = {
 			isa = PBXGroup;
 			children = (
+				DC2449C5288B47750035A236 /* Info.plist */,
 				DC2449B6288B45FA0035A236 /* AppDelegate.swift */,
-				DC2449B8288B45FA0035A236 /* ViewController.swift */,
+				DC6B952D288B8FBE0057E867 /* LaunchUtils.swift */,
 				DC2449BA288B45FB0035A236 /* Assets.xcassets */,
+				DC169498288B7EF8000A80CA /* PopoverViewController.swift */,
+				DC6B952B288B8A850057E867 /* ButtonAction.swift */,
 				DC2449BC288B45FB0035A236 /* Main.storyboard */,
 				DC2449BF288B45FB0035A236 /* MenuMission.entitlements */,
 			);
@@ -131,7 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC2449B9288B45FA0035A236 /* ViewController.swift in Sources */,
+				DC6B952E288B8FBE0057E867 /* LaunchUtils.swift in Sources */,
+				DC169499288B7EF8000A80CA /* PopoverViewController.swift in Sources */,
+				DC6B952C288B8A860057E867 /* ButtonAction.swift in Sources */,
 				DC2449B7288B45FA0035A236 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +210,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -254,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -275,6 +285,7 @@
 				DEVELOPMENT_TEAM = 9KTV75G5K9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MenuMission/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -302,6 +313,7 @@
 				DEVELOPMENT_TEAM = 9KTV75G5K9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MenuMission/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
