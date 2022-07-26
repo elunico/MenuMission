@@ -13,8 +13,14 @@ class MenuMissionItem: Identifiable {
     private var initialized: Bool = false
     
     static func icon(forAction action: ButtonAction) -> NSImage? {
-        action == .missionControl ? NSImage(systemSymbolName: "macwindow.on.rectangle", accessibilityDescription: "Mission Control") :
-        NSImage(systemSymbolName: "rectangle.grid.3x2", accessibilityDescription: "Launchpad")
+        if #available(macOS 11, *) {
+            return action == .missionControl ? NSImage(systemSymbolName: "macwindow.on.rectangle", accessibilityDescription: "Mission Control") :
+            NSImage(systemSymbolName: "rectangle.grid.3x2", accessibilityDescription: "Launchpad")
+        } else {
+            let image = action == .missionControl ? NSImage(named: "mc-dk") : NSImage(named: "lp-dk")
+            image?.isTemplate = true
+            return image
+        }
     }
     
     init(item: NSStatusItem, action: ButtonAction = .missionControl) {
@@ -36,7 +42,12 @@ class MenuMissionItem: Identifiable {
         guard initialized else { fatalError("You forgot to call loadStatusItem()") }
         if NSApp.currentEvent?.type == NSEvent.EventType.rightMouseUp {
             let popover = NSPopover()
-            popover.contentViewController = NSStoryboard.main?.instantiateController(identifier: "popovercontroller")
+            if #available(macOS 10.15, *) {
+                popover.contentViewController = NSStoryboard.main?.instantiateController(identifier: "popovercontroller")
+            } else {
+                // Fallback on earlier versions
+                popover.contentViewController = NSStoryboard.main?.instantiateController(withIdentifier: "popovercontroller") as? PopoverViewController
+            }
             (popover.contentViewController as? PopoverViewController)?.statusItem = self
             popover.behavior = .transient
             popover.animates = true
