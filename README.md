@@ -17,4 +17,4 @@ Here you can see the two icons on the far left are the Launchpad and Mission Con
 Here you can see one of the icons with the right click menu open displaying all the possible options
 ![Screen Shot 2022-07-23 at 3 09 34 PM](https://user-images.githubusercontent.com/10181211/180619621-faf0fb99-40d0-4062-8930-3cb52c507539.png)
 
-The app uses SF Symbols so it requires macOS Big Sur or later but looks great in dark and light modes and with any wallpaper!
+The app uses SF Symbols so it looks best in macOS Big Sur or later but can be run on 10.13, 10.14, and 10.15 as well with images instead of SF Symbols
