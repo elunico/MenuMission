@@ -1,4 +1,10 @@
 # MenuMission
+
+## June 2025 Update
+I was SHERLOCK'D! Apple added the ability to add buttons to the menu bar for Mission Control (and App Windows) in macOS 26 Tahoe. There is no launchpad in the Menu Bar option, but that's because there is no more Launchpad! It has been integrated into the new Spotlight interaface in Tahoe. 
+
+So this project joins the many honorable ranks of other projects that were made obsolete by the addition of features to macOS.
+
 A tool for putting Mission Control and/or Launchpad buttons in your Menu Bar
 
 As a Mac user, I use Mission Control and Launchpad dozens of times a day. There have been app icons for both of these tools since Lion when they were introduced, meaning you can put the icons in the Dock and launch them from there. However, there has never been an option to put icons in the Menu bar for these things—Until now. 
